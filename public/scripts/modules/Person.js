@@ -1,4 +1,4 @@
-const Person = (fullName, favColor) => {
+function Person(fullName, favColor) {
   this.name = fullName;
   this.favoriteColor = favColor;
   this.greet = function() {
@@ -10,6 +10,6 @@ const Person = (fullName, favColor) => {
         "."
     );
   };
-};
+}
 
-export { Person as default };
+module.exports = Person;
