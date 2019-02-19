@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "dev-server": "webpack-dev-server --mode development",
+    "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
   "repository": {
