@@ -6,15 +6,21 @@ module.exports = {
     filename: "App.js"
   },
   module: {
-    loaders: [
+    rules: [
       {
-        loader: "babel-loader",
-        query: {
-          presets: ["babel-preset-env"]
-        },
         test: /\.js$/,
-        exclude: /node-modules/
+        exclude: /node-modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["env"]
+          }
+        }
       }
     ]
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, "public"),
+    publicPath: "/scripts/"
   }
 };

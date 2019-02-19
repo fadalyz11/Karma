@@ -1,4 +1,4 @@
-class Person {
+const Person = class Person {
   constructor(fullName, favColor) {
     this.name = fullName;
     this.favoriteColor = favColor;
@@ -13,6 +13,6 @@ class Person {
         "."
     );
   }
-}
+};
 
-export default Person;
+module.exports = Person;
